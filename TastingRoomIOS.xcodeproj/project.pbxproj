@@ -14,6 +14,7 @@
 		7511CF1D1CEF701B005B8FC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7511CF1C1CEF701B005B8FC9 /* Assets.xcassets */; };
 		7511CF201CEF701B005B8FC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7511CF1E1CEF701B005B8FC9 /* LaunchScreen.storyboard */; };
 		755D29531CF3EE62007FC4BD /* AppearanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755D29521CF3EE62007FC4BD /* AppearanceTableViewController.swift */; };
+		755D29561CF3F272007FC4BD /* TastingRoom.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 755D29541CF3F272007FC4BD /* TastingRoom.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7511CF1F1CEF701B005B8FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7511CF211CEF701B005B8FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		755D29521CF3EE62007FC4BD /* AppearanceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceTableViewController.swift; sourceTree = "<group>"; };
+		755D29551CF3F272007FC4BD /* TastingRoom.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TastingRoom.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				7511CF131CEF701B005B8FC9 /* AppDelegate.swift */,
+				755D29541CF3F272007FC4BD /* TastingRoom.xcdatamodeld */,
 				7511CF151CEF701B005B8FC9 /* FirstViewController.swift */,
 				7511CF171CEF701B005B8FC9 /* SecondViewController.swift */,
 				7511CF191CEF701B005B8FC9 /* Main.storyboard */,
@@ -96,6 +99,7 @@
 		7511CF081CEF701B005B8FC9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0730;
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Liz Fallin";
@@ -144,6 +148,7 @@
 				7511CF181CEF701B005B8FC9 /* SecondViewController.swift in Sources */,
 				755D29531CF3EE62007FC4BD /* AppearanceTableViewController.swift in Sources */,
 				7511CF141CEF701B005B8FC9 /* AppDelegate.swift in Sources */,
+				755D29561CF3F272007FC4BD /* TastingRoom.xcdatamodeld in Sources */,
 				7511CF161CEF701B005B8FC9 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +302,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		755D29541CF3F272007FC4BD /* TastingRoom.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				755D29551CF3F272007FC4BD /* TastingRoom.xcdatamodel */,
+			);
+			currentVersion = 755D29551CF3F272007FC4BD /* TastingRoom.xcdatamodel */;
+			path = TastingRoom.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7511CF081CEF701B005B8FC9 /* Project object */;
 }
