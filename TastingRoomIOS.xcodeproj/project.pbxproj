@@ -15,6 +15,8 @@
 		7511CF201CEF701B005B8FC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7511CF1E1CEF701B005B8FC9 /* LaunchScreen.storyboard */; };
 		755D29531CF3EE62007FC4BD /* AppearanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755D29521CF3EE62007FC4BD /* AppearanceTableViewController.swift */; };
 		755D29561CF3F272007FC4BD /* TastingRoom.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 755D29541CF3F272007FC4BD /* TastingRoom.xcdatamodeld */; };
+		75E2F9251CF65DD200CA445E /* NoseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2F9241CF65DD200CA445E /* NoseTableViewController.swift */; };
+		75E2F9271CF6626800CA445E /* PalateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2F9261CF6626800CA445E /* PalateTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		7511CF211CEF701B005B8FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		755D29521CF3EE62007FC4BD /* AppearanceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceTableViewController.swift; sourceTree = "<group>"; };
 		755D29551CF3F272007FC4BD /* TastingRoom.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TastingRoom.xcdatamodel; sourceTree = "<group>"; };
+		75E2F9241CF65DD200CA445E /* NoseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoseTableViewController.swift; sourceTree = "<group>"; };
+		75E2F9261CF6626800CA445E /* PalateTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalateTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				7511CF1C1CEF701B005B8FC9 /* Assets.xcassets */,
 				7511CF1E1CEF701B005B8FC9 /* LaunchScreen.storyboard */,
 				7511CF211CEF701B005B8FC9 /* Info.plist */,
+				75E2F9241CF65DD200CA445E /* NoseTableViewController.swift */,
+				75E2F9261CF6626800CA445E /* PalateTableViewController.swift */,
 			);
 			path = TastingRoomIOS;
 			sourceTree = "<group>";
@@ -106,6 +112,7 @@
 				TargetAttributes = {
 					7511CF0F1CEF701B005B8FC9 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7TCR5X64M3;
 					};
 				};
 			};
@@ -145,10 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75E2F9271CF6626800CA445E /* PalateTableViewController.swift in Sources */,
 				7511CF181CEF701B005B8FC9 /* SecondViewController.swift in Sources */,
 				755D29531CF3EE62007FC4BD /* AppearanceTableViewController.swift in Sources */,
 				7511CF141CEF701B005B8FC9 /* AppDelegate.swift in Sources */,
 				755D29561CF3F272007FC4BD /* TastingRoom.xcdatamodeld in Sources */,
+				75E2F9251CF65DD200CA445E /* NoseTableViewController.swift in Sources */,
 				7511CF161CEF701B005B8FC9 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,10 +271,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TastingRoomIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LizFallin.TastingRoomIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -273,10 +286,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TastingRoomIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LizFallin.TastingRoomIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
