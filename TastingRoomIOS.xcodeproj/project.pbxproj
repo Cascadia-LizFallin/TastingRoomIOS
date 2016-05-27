@@ -15,6 +15,7 @@
 		7511CF201CEF701B005B8FC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7511CF1E1CEF701B005B8FC9 /* LaunchScreen.storyboard */; };
 		755D29531CF3EE62007FC4BD /* AppearanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755D29521CF3EE62007FC4BD /* AppearanceTableViewController.swift */; };
 		755D29561CF3F272007FC4BD /* TastingRoom.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 755D29541CF3F272007FC4BD /* TastingRoom.xcdatamodeld */; };
+		755D297B1CF75D41007FC4BD /* ClarityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755D297A1CF75D41007FC4BD /* ClarityViewController.swift */; };
 		75E2F9251CF65DD200CA445E /* NoseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2F9241CF65DD200CA445E /* NoseTableViewController.swift */; };
 		75E2F9271CF6626800CA445E /* PalateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2F9261CF6626800CA445E /* PalateTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		7511CF211CEF701B005B8FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		755D29521CF3EE62007FC4BD /* AppearanceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceTableViewController.swift; sourceTree = "<group>"; };
 		755D29551CF3F272007FC4BD /* TastingRoom.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TastingRoom.xcdatamodel; sourceTree = "<group>"; };
+		755D297A1CF75D41007FC4BD /* ClarityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClarityViewController.swift; path = ../ClarityViewController.swift; sourceTree = "<group>"; };
 		75E2F9241CF65DD200CA445E /* NoseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoseTableViewController.swift; sourceTree = "<group>"; };
 		75E2F9261CF6626800CA445E /* PalateTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalateTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +66,7 @@
 		7511CF121CEF701B005B8FC9 /* TastingRoomIOS */ = {
 			isa = PBXGroup;
 			children = (
+				755D297A1CF75D41007FC4BD /* ClarityViewController.swift */,
 				7511CF131CEF701B005B8FC9 /* AppDelegate.swift */,
 				755D29541CF3F272007FC4BD /* TastingRoom.xcdatamodeld */,
 				7511CF151CEF701B005B8FC9 /* FirstViewController.swift */,
@@ -157,6 +160,7 @@
 				755D29531CF3EE62007FC4BD /* AppearanceTableViewController.swift in Sources */,
 				7511CF141CEF701B005B8FC9 /* AppDelegate.swift in Sources */,
 				755D29561CF3F272007FC4BD /* TastingRoom.xcdatamodeld in Sources */,
+				755D297B1CF75D41007FC4BD /* ClarityViewController.swift in Sources */,
 				75E2F9251CF65DD200CA445E /* NoseTableViewController.swift in Sources */,
 				7511CF161CEF701B005B8FC9 /* FirstViewController.swift in Sources */,
 			);

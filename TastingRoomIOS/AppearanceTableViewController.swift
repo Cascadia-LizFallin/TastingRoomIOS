@@ -41,7 +41,7 @@ class AppearanceTableViewController: UITableViewController {
      cell.textLabel?.text = listData[indexPath.row];
      return cell
     }
-    
 
+    
     
 }
