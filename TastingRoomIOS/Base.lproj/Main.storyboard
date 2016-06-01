@@ -18,11 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Additional Notes:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkJ-2S-Qtc">
-                                <rect key="frame" x="20" y="363" width="166" height="41"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="21"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Winery:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eux-cB-qFn">
                                 <rect key="frame" x="20" y="105" width="125" height="41"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="21"/>
@@ -63,8 +58,13 @@
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Additional Notes:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkJ-2S-Qtc">
+                                <rect key="frame" x="20" y="366" width="166" height="41"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="21"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="K6I-QN-E9o">
-                                <rect key="frame" x="20" y="412" width="560" height="128"/>
+                                <rect key="frame" x="20" y="415" width="560" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -110,15 +110,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="0.93753319978713989" green="0.92146760225296021" blue="0.86422550678253174" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexColor" red="0.93753319978713989" green="0.92146760225296021" blue="0.86422550678253174" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.93753319978713989" green="0.92146760225296021" blue="0.86422550678253174" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppearanceCell" id="psK-ht-XRc">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppearanceCell" editingAccessoryType="checkmark" id="psK-ht-XRc">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="psK-ht-XRc" id="VId-d9-CM5">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="553" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" red="0.97647064920000004" green="0.96470594409999999" blue="0.92941182850000004" alpha="1" colorSpace="deviceRGB"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.93753319978713989" green="0.92146760225296021" blue="0.86422550678253174" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="eiT-eK-NgC" kind="show" identifier="ShowClaritySegue" id="HhR-o9-mhN"/>
                                 </connections>
@@ -149,10 +153,75 @@
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="Clarity" id="ozH-yz-Nhf">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oLy-4E-4hW">
+                                <rect key="frame" x="43" y="99" width="514" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dull" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9q-T9-TcU">
+                                <rect key="frame" x="45" y="137" width="42" height="29"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bright" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmi-bp-5ji">
+                                <rect key="frame" x="496" y="137" width="59" height="29"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XoA-o0-oUP">
+                                <rect key="frame" x="43" y="208" width="514" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hazy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKt-41-D3s">
+                                <rect key="frame" x="45" y="246" width="45" height="28"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clear" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKU-qJ-AJN">
+                                <rect key="frame" x="505" y="246" width="50" height="29"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XNb-FQ-V1X">
+                                <rect key="frame" x="45" y="335" width="510" height="196"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Additional Notes:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bif-Sy-Pxk">
+                                <rect key="frame" x="45" y="298" width="166" height="29"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="21"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93753319978713989" green="0.92146760225296021" blue="0.86422550678253174" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tmi-bp-5ji" firstAttribute="top" secondItem="lju-1h-TxK" secondAttribute="bottom" constant="73" id="0Ns-Wy-Khk"/>
+                            <constraint firstItem="tmi-bp-5ji" firstAttribute="trailing" secondItem="oLy-4E-4hW" secondAttribute="trailing" id="2vf-kt-lrb"/>
+                            <constraint firstItem="HKU-qJ-AJN" firstAttribute="trailing" secondItem="XoA-o0-oUP" secondAttribute="trailing" id="3ad-xT-ybQ"/>
+                            <constraint firstItem="XoA-o0-oUP" firstAttribute="leading" secondItem="ozH-yz-Nhf" secondAttribute="leadingMargin" constant="25" id="44p-hu-Ygi"/>
+                            <constraint firstItem="Bif-Sy-Pxk" firstAttribute="top" secondItem="lju-1h-TxK" secondAttribute="bottom" constant="234" id="5wS-j1-4oq"/>
+                            <constraint firstItem="mgb-A9-jzu" firstAttribute="top" secondItem="XNb-FQ-V1X" secondAttribute="bottom" constant="20" id="DwH-z8-4xA"/>
+                            <constraint firstItem="XNb-FQ-V1X" firstAttribute="top" secondItem="lju-1h-TxK" secondAttribute="bottom" constant="271" id="Iqy-bu-tni"/>
+                            <constraint firstItem="Bif-Sy-Pxk" firstAttribute="leading" secondItem="oLy-4E-4hW" secondAttribute="leading" id="J4B-CZ-euK"/>
+                            <constraint firstItem="a9q-T9-TcU" firstAttribute="leading" secondItem="oLy-4E-4hW" secondAttribute="leading" id="Jfs-cq-L5M"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oLy-4E-4hW" secondAttribute="trailing" constant="25" id="PMw-17-liB"/>
+                            <constraint firstItem="oLy-4E-4hW" firstAttribute="top" secondItem="lju-1h-TxK" secondAttribute="bottom" constant="35" id="bcA-Bb-HDY"/>
+                            <constraint firstItem="XNb-FQ-V1X" firstAttribute="trailing" secondItem="oLy-4E-4hW" secondAttribute="trailing" id="gQ9-41-Yhe"/>
+                            <constraint firstItem="yKt-41-D3s" firstAttribute="top" secondItem="lju-1h-TxK" secondAttribute="bottom" constant="182" id="hwi-dO-MaF"/>
+                            <constraint firstItem="HKU-qJ-AJN" firstAttribute="top" secondItem="lju-1h-TxK" secondAttribute="bottom" constant="182" id="npz-pJ-ng9"/>
+                            <constraint firstItem="XoA-o0-oUP" firstAttribute="top" secondItem="lju-1h-TxK" secondAttribute="bottom" constant="144" id="p7l-2x-NHE"/>
+                            <constraint firstItem="XNb-FQ-V1X" firstAttribute="leading" secondItem="oLy-4E-4hW" secondAttribute="leading" id="rD8-ql-gTg"/>
+                            <constraint firstItem="a9q-T9-TcU" firstAttribute="top" secondItem="lju-1h-TxK" secondAttribute="bottom" constant="73" id="rVC-4K-nbb"/>
+                            <constraint firstItem="oLy-4E-4hW" firstAttribute="leading" secondItem="ozH-yz-Nhf" secondAttribute="leadingMargin" constant="25" id="x4B-0Z-iTb"/>
+                            <constraint firstItem="yKt-41-D3s" firstAttribute="leading" secondItem="XoA-o0-oUP" secondAttribute="leading" id="zWp-ps-xNc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XoA-o0-oUP" secondAttribute="trailing" constant="25" id="zlb-M2-KMg"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="XYF-FK-pki"/>
-                    <navigationItem key="navigationItem" title="Clarity/Brightness" id="8P3-HQ-70y">
+                    <tabBarItem key="tabBarItem" enabled="NO" title="" id="XYF-FK-pki"/>
+                    <navigationItem key="navigationItem" id="8P3-HQ-70y">
                         <barButtonItem key="backBarButtonItem" title="Appearance" id="abC-9C-9t8"/>
                     </navigationItem>
                 </viewController>
@@ -245,7 +314,7 @@
         <scene sceneID="aUJ-Ln-E8t">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qm9-bc-alR" userLabel="AppearanceNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Appearance" id="EL4-2O-gA0"/>
+                    <tabBarItem key="tabBarItem" title="Appearance" image="eye-Icon-Small" id="EL4-2O-gA0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="BarrelsCellar" id="at0-IA-sGr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -270,7 +339,7 @@
         <scene sceneID="uYT-Uz-fLL">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7TR-KR-vWB" userLabel="PalateNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Palate" id="HQ8-GI-sPC" userLabel="Palate"/>
+                    <tabBarItem key="tabBarItem" title="Palate" image="mouth2-Icon-Small" id="HQ8-GI-sPC" userLabel="Palate"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bje-2m-ff8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -289,7 +358,7 @@
         <scene sceneID="YWE-dG-otm">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AhT-bu-Qjy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home-Icon-40" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bu3-E2-vNK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -308,7 +377,7 @@
         <scene sceneID="tgL-tC-hsY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pN1-iA-fal" userLabel="NoseNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Nose" id="nLa-0T-LAz"/>
+                    <tabBarItem key="tabBarItem" title="Nose" image="nose-Icon-Small" id="nLa-0T-LAz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vhu-mx-R8l">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -326,7 +395,10 @@
     </scenes>
     <resources>
         <image name="BarrelsCellar" width="933" height="511"/>
-        <image name="first" width="30" height="30"/>
+        <image name="eye-Icon-Small" width="29" height="29"/>
+        <image name="home-Icon-40" width="40" height="40"/>
+        <image name="mouth2-Icon-Small" width="29" height="29"/>
+        <image name="nose-Icon-Small" width="29" height="29"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="HhR-o9-mhN"/>
