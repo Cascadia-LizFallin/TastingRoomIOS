@@ -106,7 +106,7 @@
         <scene sceneID="WXg-Q8-17q">
             <objects>
                 <tableViewController id="RVO-gb-Ha7" userLabel="AppearanceTableViewController" customClass="AppearanceTableViewController" customModule="TastingRoomIOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="y0K-9A-G9t" userLabel="AppearanceTableView">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="2" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="y0K-9A-G9t" userLabel="AppearanceTableView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -184,17 +184,17 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XNb-FQ-V1X">
-                                <rect key="frame" x="45" y="335" width="510" height="196"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Additional Notes:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bif-Sy-Pxk">
                                 <rect key="frame" x="45" y="298" width="166" height="29"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="21"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XNb-FQ-V1X">
+                                <rect key="frame" x="45" y="335" width="510" height="196"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.93753319978713989" green="0.92146760225296021" blue="0.86422550678253174" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -221,7 +221,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" enabled="NO" title="" id="XYF-FK-pki"/>
-                    <navigationItem key="navigationItem" id="8P3-HQ-70y">
+                    <navigationItem key="navigationItem" title="Clarity/Brightness" id="8P3-HQ-70y">
                         <barButtonItem key="backBarButtonItem" title="Appearance" id="abC-9C-9t8"/>
                     </navigationItem>
                 </viewController>
@@ -233,11 +233,13 @@
         <scene sceneID="Dlb-Hp-mng">
             <objects>
                 <tableViewController id="kKC-L6-RyE" userLabel="NoseTableViewController" customClass="NoseTableViewController" customModule="TastingRoomIOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="MZ9-fW-LCP">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="MZ9-fW-LCP">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" red="0.93753319978713989" green="0.92146760225296021" blue="0.86422550678253174" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.93753319978713989" green="0.92146760225296021" blue="0.86422550678253174" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexTrackingBackgroundColor" red="0.93753319978713989" green="0.92146760225296021" blue="0.86422550678253174" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NoseCell" id="2D3-3t-se9">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
@@ -253,7 +255,9 @@
                             <outlet property="delegate" destination="kKC-L6-RyE" id="QrY-gR-VYx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="YfM-VE-bXM"/>
+                    <navigationItem key="navigationItem" title="Nose" id="YfM-VE-bXM">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="Nqj-Hm-icY"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hGV-Lm-KWo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -282,7 +286,9 @@
                             <outlet property="delegate" destination="AfS-qv-r7L" id="UmO-qn-lxc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="phK-Sh-faQ"/>
+                    <navigationItem key="navigationItem" title="Palate" id="phK-Sh-faQ">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="KAD-HE-5SZ"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gxw-Kq-ySI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -320,7 +326,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.97647064920000004" green="0.96470594409999999" blue="0.92941182850000004" alpha="1" colorSpace="deviceRGB"/>
-                        <color key="barTintColor" red="1" green="0.83778578849999996" blue="0.51974550239999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.93753319978713989" green="0.92146760225296021" blue="0.86422550678253174" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="lNb-MD-GGy">
