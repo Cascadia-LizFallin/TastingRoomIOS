@@ -172,7 +172,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oLy-4E-4hW">
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oLy-4E-4hW">
                                 <rect key="frame" x="43" y="33" width="514" height="31"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Clear" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmi-bp-5ji">
@@ -240,9 +240,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" enabled="NO" title="" id="XYF-FK-pki"/>
-                    <navigationItem key="navigationItem" title="Clarity/Brightness" id="8P3-HQ-70y">
-                        <barButtonItem key="backBarButtonItem" title="Appearance" id="abC-9C-9t8"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Clarity/Brightness" id="8P3-HQ-70y"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aNf-Xn-dqo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -258,15 +256,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" red="0.93753319978713989" green="0.92146760225296021" blue="0.86422550678253174" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.93753319978713989" green="0.92146760225296021" blue="0.86422550678253174" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="sectionIndexTrackingBackgroundColor" red="0.93753319978713989" green="0.92146760225296021" blue="0.86422550678253174" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NoseCell" id="2D3-3t-se9">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NoseCell" editingAccessoryType="detailDisclosureButton" id="2D3-3t-se9">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2D3-3t-se9" id="Ibt-7D-J1Y">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" red="0.97647064920000004" green="0.96470594409999999" blue="0.92941182850000004" alpha="1" colorSpace="deviceRGB"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.97647064920000004" green="0.96470594409999999" blue="0.92941182850000004" alpha="1" colorSpace="deviceRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -275,7 +274,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Nose" id="YfM-VE-bXM">
-                        <barButtonItem key="backBarButtonItem" title="Home" id="Nqj-Hm-icY"/>
+                        <barButtonItem key="backBarButtonItem" title="      " id="Nqj-Hm-icY"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hGV-Lm-KWo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -290,8 +289,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="0.97647064920000004" green="0.96470594409999999" blue="0.92941182850000004" alpha="1" colorSpace="deviceRGB"/>
                         <color key="sectionIndexColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="0.97647064920000004" green="0.96470594409999999" blue="0.92941182850000004" alpha="1" colorSpace="deviceRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PalateCell" id="zKk-x8-1ab">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
@@ -301,6 +301,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" red="0.97647064920000004" green="0.96470594409999999" blue="0.92941182850000004" alpha="1" colorSpace="deviceRGB"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.97647064920000004" green="0.96470594409999999" blue="0.92941182850000004" alpha="1" colorSpace="deviceRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -309,7 +310,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Palate" id="phK-Sh-faQ">
-                        <barButtonItem key="backBarButtonItem" title="Home" id="KAD-HE-5SZ"/>
+                        <barButtonItem key="backBarButtonItem" title="   " id="KAD-HE-5SZ"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gxw-Kq-ySI" userLabel="First Responder" sceneMemberID="firstResponder"/>
