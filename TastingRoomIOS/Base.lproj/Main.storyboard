@@ -132,11 +132,11 @@
                         <color key="separatorColor" red="0.93753319978713989" green="0.92146760225296021" blue="0.86422550678253174" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.97647064920000004" green="0.96470594409999999" blue="0.92941182850000004" alpha="1" colorSpace="deviceRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppearanceCell" editingAccessoryType="checkmark" id="psK-ht-XRc">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppearanceCell" id="psK-ht-XRc">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="psK-ht-XRc" id="VId-d9-CM5">
-                                    <rect key="frame" x="0.0" y="0.0" width="553" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="533" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" red="0.97647064920000004" green="0.96470594409999999" blue="0.92941182850000004" alpha="1" colorSpace="deviceRGB"/>
                                 </tableViewCellContentView>
@@ -153,7 +153,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Appearance" id="xmS-3a-oRk">
-                        <barButtonItem key="backBarButtonItem" title="Home" id="D4w-w1-k1y"/>
+                        <barButtonItem key="backBarButtonItem" title="   " id="yeZ-KO-ImR"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xJy-GS-Yw0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -207,14 +207,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kn-bO-B66">
-                                <rect key="frame" x="449" y="468" width="106" height="37"/>
-                                <color key="backgroundColor" red="0.97647064920000004" green="0.96470594409999999" blue="0.92941182850000004" alpha="1" colorSpace="deviceRGB"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Italic" family="Iowan Old Style" pointSize="18"/>
-                                <state key="normal" title="Go to Intensity">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hazy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9q-T9-TcU">
                                 <rect key="frame" x="45" y="62" width="47" height="29"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="21"/>
@@ -229,7 +221,6 @@
                             <constraint firstItem="HKU-qJ-AJN" firstAttribute="trailing" secondItem="XoA-o0-oUP" secondAttribute="trailing" id="3ad-xT-ybQ"/>
                             <constraint firstItem="XoA-o0-oUP" firstAttribute="leading" secondItem="ozH-yz-Nhf" secondAttribute="leadingMargin" constant="25" id="44p-hu-Ygi"/>
                             <constraint firstItem="Bif-Sy-Pxk" firstAttribute="top" secondItem="lju-1h-TxK" secondAttribute="bottom" constant="212" id="5wS-j1-4oq"/>
-                            <constraint firstItem="8kn-bO-B66" firstAttribute="trailing" secondItem="XNb-FQ-V1X" secondAttribute="trailing" id="9TL-No-GUX"/>
                             <constraint firstItem="mgb-A9-jzu" firstAttribute="top" secondItem="XNb-FQ-V1X" secondAttribute="bottom" constant="118" id="DwH-z8-4xA"/>
                             <constraint firstItem="XNb-FQ-V1X" firstAttribute="top" secondItem="lju-1h-TxK" secondAttribute="bottom" constant="249" id="Iqy-bu-tni"/>
                             <constraint firstItem="Bif-Sy-Pxk" firstAttribute="leading" secondItem="oLy-4E-4hW" secondAttribute="leading" id="J4B-CZ-euK"/>
@@ -244,7 +235,6 @@
                             <constraint firstItem="XNb-FQ-V1X" firstAttribute="leading" secondItem="oLy-4E-4hW" secondAttribute="leading" id="rD8-ql-gTg"/>
                             <constraint firstItem="a9q-T9-TcU" firstAttribute="top" secondItem="lju-1h-TxK" secondAttribute="bottom" constant="51" id="rVC-4K-nbb"/>
                             <constraint firstItem="oLy-4E-4hW" firstAttribute="leading" secondItem="ozH-yz-Nhf" secondAttribute="leadingMargin" constant="25" id="x4B-0Z-iTb"/>
-                            <constraint firstItem="8kn-bO-B66" firstAttribute="top" secondItem="XNb-FQ-V1X" secondAttribute="bottom" constant="35" id="xXN-YK-c12"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oLy-4E-4hW" secondAttribute="trailing" constant="25" id="xf7-ph-FSy"/>
                             <constraint firstItem="yKt-41-D3s" firstAttribute="leading" secondItem="XoA-o0-oUP" secondAttribute="leading" id="zWp-ps-xNc"/>
                         </constraints>
@@ -341,12 +331,11 @@
                         <segue destination="qm9-bc-alR" kind="relationship" relationship="viewControllers" id="LtM-lS-MDu"/>
                         <segue destination="pN1-iA-fal" kind="relationship" relationship="viewControllers" id="DgP-iX-w1L"/>
                         <segue destination="7TR-KR-vWB" kind="relationship" relationship="viewControllers" id="3H0-jU-pt0"/>
-                        <segue destination="eiT-eK-NgC" kind="relationship" relationship="viewControllers" id="cIW-nI-zk6"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-120" y="202"/>
+            <point key="canvasLocation" x="-1008" y="116"/>
         </scene>
         <!--AppearanceNavigationController-->
         <scene sceneID="aUJ-Ln-E8t">
@@ -438,7 +427,4 @@
         <image name="mouth2-Icon-Small" width="29" height="29"/>
         <image name="nose-Icon-Small" width="29" height="29"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="cIW-nI-zk6"/>
-    </inferredMetricsTieBreakers>
 </document>
