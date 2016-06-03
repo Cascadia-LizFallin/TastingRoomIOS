@@ -21,6 +21,14 @@ class ClarityViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    // Dismisses keyboard when user touches background screen
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
+        view.endEditing(true)
+        super.touchesBegan(touches, withEvent: event)
+    }
+    
+    
 
     /*
     // MARK: - Navigation

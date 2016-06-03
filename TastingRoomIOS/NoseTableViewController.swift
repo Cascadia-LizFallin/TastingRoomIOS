@@ -10,6 +10,7 @@ import UIKit
 
 class NoseTableViewController: UITableViewController {
 
+    // Characteristics for Nose
     var listData = ["Condition", "Intensity", "Aroma Characteristics"]
     
     override func viewDidLoad() {
@@ -30,12 +31,14 @@ class NoseTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     
+    // Returns the number of rows to be used in the dynamic data table
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return listData.count
     }
     
     
+    // Creates the label for the current cell
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("NoseCell", forIndexPath: indexPath)
         cell.textLabel?.text = listData[indexPath.row];
