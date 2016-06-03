@@ -42,6 +42,11 @@ class AppearanceTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
      let cell = tableView.dequeueReusableCellWithIdentifier("AppearanceCell", forIndexPath: indexPath)
      cell.textLabel?.text = listData[indexPath.row];
+        
+        // Modify font
+        cell.textLabel?.font = UIFont(name:"Iowan Old Style Roman 18.0", size:18);
+        
+        
      return cell
     }
 

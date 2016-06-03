@@ -174,15 +174,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oLy-4E-4hW">
-                                <rect key="frame" x="43" y="65" width="514" height="31"/>
-                            </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Clear" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmi-bp-5ji">
-                                <rect key="frame" x="505" y="94" width="50" height="29"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="21"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="General Observations:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bif-Sy-Pxk">
                                 <rect key="frame" x="45" y="232" width="209" height="29"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="21"/>
@@ -194,23 +185,32 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hazy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9q-T9-TcU">
-                                <rect key="frame" x="45" y="94" width="47" height="29"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oLy-4E-4hW">
+                                <rect key="frame" x="43" y="87" width="514" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clear" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmi-bp-5ji">
+                                <rect key="frame" x="505" y="116" width="50" height="29"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="21"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XoA-o0-oUP">
-                                <rect key="frame" x="43" y="131" width="514" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XoA-o0-oUP">
+                                <rect key="frame" x="43" y="153" width="514" height="31"/>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dull" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKt-41-D3s">
-                                <rect key="frame" x="45" y="157" width="40" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dull" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKt-41-D3s">
+                                <rect key="frame" x="45" y="179" width="40" height="28"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bright" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKU-qJ-AJN">
-                                <rect key="frame" x="496" y="157" width="59" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bright" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKU-qJ-AJN">
+                                <rect key="frame" x="496" y="179" width="59" height="29"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hazy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9q-T9-TcU">
+                                <rect key="frame" x="45" y="116" width="47" height="29"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="21"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -218,7 +218,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.97647064920000004" green="0.96470594409999999" blue="0.92941182850000004" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
-                            <constraint firstItem="tmi-bp-5ji" firstAttribute="top" secondItem="lju-1h-TxK" secondAttribute="bottom" constant="-2" id="0Ns-Wy-Khk"/>
+                            <constraint firstItem="tmi-bp-5ji" firstAttribute="top" secondItem="lju-1h-TxK" secondAttribute="bottom" constant="52" id="0Ns-Wy-Khk"/>
                             <constraint firstItem="tmi-bp-5ji" firstAttribute="trailing" secondItem="oLy-4E-4hW" secondAttribute="trailing" id="2vf-kt-lrb"/>
                             <constraint firstItem="HKU-qJ-AJN" firstAttribute="trailing" secondItem="XoA-o0-oUP" secondAttribute="trailing" id="3ad-xT-ybQ"/>
                             <constraint firstItem="XoA-o0-oUP" firstAttribute="leading" secondItem="ozH-yz-Nhf" secondAttribute="leadingMargin" constant="25" id="44p-hu-Ygi"/>
@@ -227,15 +227,15 @@
                             <constraint firstItem="Bif-Sy-Pxk" firstAttribute="leading" secondItem="oLy-4E-4hW" secondAttribute="leading" id="J4B-CZ-euK"/>
                             <constraint firstItem="a9q-T9-TcU" firstAttribute="leading" secondItem="oLy-4E-4hW" secondAttribute="leading" id="Jfs-cq-L5M"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XoA-o0-oUP" secondAttribute="trailing" constant="25" id="Pxr-Lr-snb"/>
-                            <constraint firstItem="oLy-4E-4hW" firstAttribute="top" secondItem="lju-1h-TxK" secondAttribute="bottom" constant="-31" id="bcA-Bb-HDY"/>
+                            <constraint firstItem="oLy-4E-4hW" firstAttribute="top" secondItem="lju-1h-TxK" secondAttribute="bottom" constant="23" id="bcA-Bb-HDY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XNb-FQ-V1X" secondAttribute="trailing" constant="25" id="fQj-kr-OZP"/>
-                            <constraint firstItem="yKt-41-D3s" firstAttribute="top" secondItem="lju-1h-TxK" secondAttribute="bottom" constant="65" id="hwi-dO-MaF"/>
-                            <constraint firstItem="XNb-FQ-V1X" firstAttribute="top" secondItem="XoA-o0-oUP" secondAttribute="bottom" constant="136" id="l4r-Aa-Sbt"/>
+                            <constraint firstItem="yKt-41-D3s" firstAttribute="top" secondItem="lju-1h-TxK" secondAttribute="bottom" constant="115" id="hwi-dO-MaF"/>
+                            <constraint firstItem="XNb-FQ-V1X" firstAttribute="top" secondItem="XoA-o0-oUP" secondAttribute="bottom" constant="86" id="l4r-Aa-Sbt"/>
                             <constraint firstItem="mgb-A9-jzu" firstAttribute="top" secondItem="XNb-FQ-V1X" secondAttribute="bottom" constant="39" id="lhe-uA-52M"/>
-                            <constraint firstItem="HKU-qJ-AJN" firstAttribute="top" secondItem="lju-1h-TxK" secondAttribute="bottom" constant="65" id="npz-pJ-ng9"/>
-                            <constraint firstItem="XoA-o0-oUP" firstAttribute="top" secondItem="lju-1h-TxK" secondAttribute="bottom" constant="39" id="p7l-2x-NHE"/>
+                            <constraint firstItem="HKU-qJ-AJN" firstAttribute="top" secondItem="lju-1h-TxK" secondAttribute="bottom" constant="115" id="npz-pJ-ng9"/>
+                            <constraint firstItem="XoA-o0-oUP" firstAttribute="top" secondItem="lju-1h-TxK" secondAttribute="bottom" constant="89" id="p7l-2x-NHE"/>
                             <constraint firstItem="XNb-FQ-V1X" firstAttribute="leading" secondItem="oLy-4E-4hW" secondAttribute="leading" id="rD8-ql-gTg"/>
-                            <constraint firstItem="a9q-T9-TcU" firstAttribute="top" secondItem="lju-1h-TxK" secondAttribute="bottom" constant="-2" id="rVC-4K-nbb"/>
+                            <constraint firstItem="a9q-T9-TcU" firstAttribute="top" secondItem="lju-1h-TxK" secondAttribute="bottom" constant="52" id="rVC-4K-nbb"/>
                             <constraint firstItem="oLy-4E-4hW" firstAttribute="leading" secondItem="ozH-yz-Nhf" secondAttribute="leadingMargin" constant="25" id="x4B-0Z-iTb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oLy-4E-4hW" secondAttribute="trailing" constant="25" id="xf7-ph-FSy"/>
                             <constraint firstItem="yKt-41-D3s" firstAttribute="leading" secondItem="XoA-o0-oUP" secondAttribute="leading" id="zWp-ps-xNc"/>
