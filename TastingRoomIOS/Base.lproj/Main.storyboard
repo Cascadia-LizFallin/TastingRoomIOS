@@ -369,7 +369,7 @@
         <scene sceneID="uYT-Uz-fLL">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7TR-KR-vWB" userLabel="PalateNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Palate" image="mouth2-Icon-Small" id="HQ8-GI-sPC" userLabel="Palate"/>
+                    <tabBarItem key="tabBarItem" title="Palate" image="wine-glass-Icon-Small" id="HQ8-GI-sPC" userLabel="Palate"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bje-2m-ff8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -430,7 +430,7 @@
         <image name="BarrelsCellar" width="933" height="511"/>
         <image name="eye-Icon-Small" width="29" height="29"/>
         <image name="home-Icon-40" width="40" height="40"/>
-        <image name="mouth2-Icon-Small" width="29" height="29"/>
         <image name="nose-Icon-Small" width="29" height="29"/>
+        <image name="wine-glass-Icon-Small" width="29" height="29"/>
     </resources>
 </document>

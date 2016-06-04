@@ -22,6 +22,7 @@ class ClarityViewController: UIViewController {
     }
     
     
+    
     // Dismisses keyboard when user touches background screen
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
         view.endEditing(true)
