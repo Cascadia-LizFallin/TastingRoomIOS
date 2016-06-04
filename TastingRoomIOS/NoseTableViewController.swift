@@ -42,6 +42,10 @@ class NoseTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("NoseCell", forIndexPath: indexPath)
         cell.textLabel?.text = listData[indexPath.row];
+
+        // Modify font
+        cell.textLabel?.font = UIFont(name:"Iowan Old Style", size:18);
+        
         return cell
     }
     

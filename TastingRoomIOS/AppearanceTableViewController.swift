@@ -44,8 +44,7 @@ class AppearanceTableViewController: UITableViewController {
      cell.textLabel?.text = listData[indexPath.row];
         
         // Modify font
-        cell.textLabel?.font = UIFont(name:"Iowan Old Style Roman 18.0", size:18);
-        
+        cell.textLabel?.font = UIFont(name:"Iowan Old Style", size:18);
         
      return cell
     }
